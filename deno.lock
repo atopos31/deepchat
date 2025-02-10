@@ -1,0 +1,36 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@openai/openai@*": "4.83.0",
+    "npm:@hono/zod-validator@*": "0.4.2_hono@4.7.0_zod@3.24.1",
+    "npm:hono@*": "4.7.0",
+    "npm:zod@*": "3.24.1"
+  },
+  "jsr": {
+    "@openai/openai@4.83.0": {
+      "integrity": "114082705b8a2d6ef96e0228abe2fa5ad3842f7d4f1c891a94bdfe6ad89f728f"
+    }
+  },
+  "npm": {
+    "@hono/zod-validator@0.4.2_hono@4.7.0_zod@3.24.1": {
+      "integrity": "sha512-1rrlBg+EpDPhzOV4hT9pxr5+xDVmKuz6YJl+la7VCwK6ass5ldyKm5fD+umJdV2zhHD6jROoCCv8NbTwyfhT0g==",
+      "dependencies": [
+        "hono",
+        "zod"
+      ]
+    },
+    "hono@4.7.0": {
+      "integrity": "sha512-hV97aIR4WYbG30k234sD9B3VNr1ZWdQRmrVF76LKFlmI7O9Yo70mG9+mFwyQ6Sjrz4wH71GfnBxv6CPjcx3QNw=="
+    },
+    "zod@3.24.1": {
+      "integrity": "sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@hono/zod-validator@*",
+      "npm:hono@*",
+      "npm:zod@*"
+    ]
+  }
+}
