@@ -1,0 +1,8 @@
+services:
+  deepchat:
+    build: .
+    container_name: "deepchat"
+    ports:
+      - 9000:8000
+    env_file:
+      - .env

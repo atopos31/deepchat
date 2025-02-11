@@ -11,10 +11,10 @@ const defaultURL = new Map<string, string>(
 );
 
 export const GetConfig = (name: "deep" | "chat"): config => {
-  name.toUpperCase;
+  const upname = name.toUpperCase();
   return {
-    baseURL: Deno.env.get(`${name}_BASE_URL`) ??
-      defaultURL.get(name),
-    apiKey: Deno.env.get(`${name}_KEY`) ?? "",
+    baseURL: Deno.env.get(`${upname}_BASE_URL`) ??
+      defaultURL.get(upname),
+    apiKey: Deno.env.get(`${upname}_KEY`) ?? "",
   };
 };

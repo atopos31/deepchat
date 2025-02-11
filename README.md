@@ -26,10 +26,10 @@
    创建一个 `.env` 文件（或直接设置环境变量），其中包含以下键：
 
    ```
-   deep_KEY=your_deepseek_api_key
-   chat_KEY=your_gemini_api_key
-   deep_BASE_URL=your_deepseek_base_url  # 可选，默认为 https://api.deepseek.com
-   chat_BASE_URL=your_gemini_base_url    # 可选，默认为 https://generativelanguage.googleapis.com/v1beta/openai/
+   DEEP_KEY=your_deepseek_api_key
+   CHAT_KEY=your_gemini_api_key
+   DEEP_BASE_URL=your_deepseek_base_url  # 可选，默认为 https://api.deepseek.com
+   CHAT_BASE_URL=your_gemini_base_url    # 可选，默认为 https://generativelanguage.googleapis.com/v1beta/openai/
    ```
 
    将 `your_deepseek_api_key` 和 `your_gemini_api_key` 替换为您的实际 API
