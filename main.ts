@@ -69,12 +69,12 @@ const resetReq = (reqBody: chatCompletionType, reasonContent: string) => {
     (oldUserMsg as contentItem[]).forEach((e) => {
       if (e.type === "text") {
         e.text =
-          `${e.text}\n\nHere's your reasoning process:\n${reasonContent}\n\nBased on this reasoning, Provide ypur response in the form of user's request.Your response language depends on the request language.`;
+          `Here's user's request:${e.text}\n\nHere's user's reasoning process:\n${reasonContent}\n\nBased on this reasoning, Provide ypur response in the form of user's request.Your response language depends on the request language.`;
       }
     });
   } else {
     (oldUserMsg as userContent).content =
-      `${oldUserMsg?.content}\n\nHere's your reasoning process:\n${reasonContent}\n\nBased on this reasoning, Provide ypur response in the form of user's request.Your response language depends on the request language.`;
+      `Here's user's request:${oldUserMsg?.content}\n\nHere's user's reasoning process:\n${reasonContent}\n\nBased on this reasoning, Provide ypur response in the form of user's request.Your response language depends on the request language.`;
   }
   reqBody.messages.pop();
   if (oldUserMsg) {
